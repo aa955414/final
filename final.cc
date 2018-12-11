@@ -2,7 +2,7 @@
 //Alyssa Atkinson
 //December 11, 2018
 
-//#include "gtest/gtest.h"
+#include "gtest/gtest.h"
 #include <iostream>
 #include <cstdlib>
 #include <cctype>
@@ -62,7 +62,7 @@ int countLine(char *pName)
   return lines;
 }
  
-/*
+
   TEST(CharCount, DogFile)
 {
   EXPECT_EQ(14, countChar("file1.txt"));
@@ -76,7 +76,8 @@ int countLine(char *pName)
  TEST(CharCount, BunnyFile)
 {
   EXPECT_EQ(28, countChar("file3.txt"));
-  }*/
+  }
+
  /// @function main function to run counts
  /// @param int argc
  /// @param char *argv[]
@@ -100,8 +101,8 @@ int main(int argc, char *argv[])
     countChar(argv[i]);
     }
   
-    //::testing::InitGoogleTest(&argc, argv);
-    //return RUN_ALL_TESTS();
+    ::testing::InitGoogleTest(&argc, argv);
+    return RUN_ALL_TESTS();
     return 0;
 }
 

@@ -18,7 +18,7 @@ doc:
 
 check:
 	valgrind ./count
-	cppcheck final.cc
+	cppcheck count
 
 clean:
 	-rm *.o
